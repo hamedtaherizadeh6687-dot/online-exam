@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>آزمون آنلاین شیمی</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>آزمون آنلاین شیمی</h1>
+
+
+<div id="loginBox">
+
+
+<h3>اطلاعات دانش‌آموز</h3>
+
+
+<input id="name" placeholder="نام و نام خانوادگی">
+
+
+<input id="className" placeholder="کلاس">
+
+
+<input id="examCode" placeholder="کد آزمون">
+
+
+<button onclick="startExam()">
+
+شروع آزمون
+
+</button>
+
+
+</div>
+
+
+
+
+<div id="examBox" style="display:none;">
+
+
+<div class="header">
+
+<span>
+زمان:
+</span>
+
+<span id="timer">
+15:00
+</span>
+
+</div>
+
+
+<h2 id="question"></h2>
+
+
+<div id="options"></div>
+
+
+<button onclick="nextQuestion()">
+
+سؤال بعدی
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script type="module" src="app.js"></script>
+
+
+</body>
+
+</html>
